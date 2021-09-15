@@ -1,12 +1,12 @@
-// common JS
-document.querySelectorAll(".watch-control,.controls a, .iphone-btn").forEach(control => {
-    control.addEventListener('click',e => {
+// Common JS
+document.querySelectorAll('.watch-control, .controls a, .iphone-btn').forEach(control => {
+    control.addEventListener('click', e => {
         e.preventDefault()
     })
 })
-// end of common JS 
+// End of Common JS
 
-// cube 
+// Cube 
 let x = 0
 let y = 20
 let z = 0
@@ -60,10 +60,10 @@ document.querySelector('.controls').addEventListener('mouseout', () => {
     bool = true
     playPause()
 })
-// end of cube 
 
-// slideshow
+// End of Cube 
 
+// Slideshow
 const slideshowDivs = () => {
     for(let i = 1; i <= 5; i++) {
         const div = document.createElement('div')
@@ -96,23 +96,23 @@ const slideshow = () => {
             divs[0].classList.add('change')
             a = 1
         }
-    }, 10000)
+    }, 20000)
 }
 
 slideshow()
-// end of slideshow 
+// End of Slideshow
 
-// section 3
-const section3Content = document.querySelector(".section-3-content")
-window.addEventListener('scroll',() => {
-    if(window.pageYOffset + window.innerHeight >= section3Content.offsetTop + section3Content.offsetHeight / 2){
-        section3Content.classList.add("change")
+// Section 3
+const section3Content = document.querySelector('.section-3-content')
+
+window.addEventListener('scroll', () => {
+    if(window.pageYOffset + window.innerHeight >= section3Content.offsetTop + section3Content.offsetHeight / 2) {
+        section3Content.classList.add('change')
     }
 })
+// End of Section 3
 
-// end of section 3
-
-// section 4 
+// Section 4
 const watchBands = document.querySelector('.watch-bands')
 const watchCases = document.querySelector('.watch-cases')
 
